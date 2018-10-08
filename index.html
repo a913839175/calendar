@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <script src="./js/jquery.min.1.10.2.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+<div class="rightz">
+    <div class="right" id="right" style="position: relative;">
+        <input type="text" id="right1">
+    </div>
+    <div class="righttwo" id="righttwo" style="margin-top: 310px;position: relative;">
+        <input type="text" id="right2">  
+    </div> 
+</div>   
+</body>
+</html>
+<script>
+    $('#right').rili({
+        id:'#right',   //容器ID的值 容器注意设定相对定位
+        value:'#right1', //接受值得input
+        //日期格式 分为 YY-MM-DD hh:mm:ss 或者 YY/MM/DD 或者 YY-MM-DD 或者 YY/MM/DD hh:mm:ss 字母必须固定,分隔号可以改变,选填
+        dataform:'YY-MM-DD hh:mm:ss'
+    });
+    $('#righttwo').rili({
+        id:'#righttwo', //容器ID的值 容器注意设定相对定位
+        value:'#right2', //接受值得input
+        //日期格式 分为 YY-MM-DD hh:mm:ss 或者 YY/MM/DD 或者 YY-MM-DD 或者 YY/MM/DD hh:mm:ss 字母必须固定,分隔号可以改变,选填
+        // dataform:'YY-MM-DD hh:mm:ss'
+    });
+</script>
